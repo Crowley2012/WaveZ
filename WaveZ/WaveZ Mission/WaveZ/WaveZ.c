@@ -34,16 +34,16 @@ class WaveZ : MissionGameplay
 	
 	void WaveZ()
 	{
-		Print( "CommunityOfflineMode::CommunityOfflineMode()" );
+		Print( "WaveZ Loaded" );
 
 		m_ObjectEditor = new ObjectEditor( this );
 	}
 	
 	void ~WaveZ()
 	{
-		Print( "CommunityOfflineMode::~CommunityOfflineMode()" );
-
 		DestroyHive();
+
+		Print("WaveZ Closing");
 	}
 
 	override void OnInit()
@@ -53,14 +53,10 @@ class WaveZ : MissionGameplay
         Hive oHive = GetHive();
 
         if( !oHive )
-        {
             oHive = CreateHive();
-        }
 
         if( oHive )
-        {
             oHive.InitOffline();
-        }
 
         SetupWeather();
 

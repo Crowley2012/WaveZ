@@ -55,6 +55,10 @@
     <None Include="Arkensor Mission\Reset Hive and Play.bat" />
     <None Include="Default Mission\areaflags.map" />
     <None Include="WaveZ Mission\areaflags.map" />
+    <None Include="WaveZ Mission\gui\ObjectManager.layout" />
+    <None Include="WaveZ Mission\gui\PositionManager.layout" />
+    <None Include="WaveZ Mission\gui\WeatherManager.layout" />
+    <None Include="WaveZ Mission\gui\WelcomeManager.layout" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Arkensor Mission\cfgEconomyCore.xml" />
@@ -94,8 +98,12 @@
     <Content Include="Default Mission\MapGroupCluster.xml" />
     <Content Include="Default Mission\mapGroupPos.xml" />
     <Content Include="Default Mission\mapGroupProto.xml" />
-    <Content Include="WaveZ Mission\cfgEconomyCore.xml" />
-    <Content Include="WaveZ Mission\cfgEventSpawns.xml" />
+    <Content Include="WaveZ Mission\cfgEconomyCore.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WaveZ Mission\cfgEventSpawns.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="WaveZ Mission\cfgLimitsDefinition.xml" />
     <Content Include="WaveZ Mission\cfgLimitsDefinitionUser.xml" />
     <Content Include="WaveZ Mission\cfgPlayerSpawnPoints.xml" />
@@ -105,10 +113,17 @@
     <Content Include="WaveZ Mission\db\events.xml" />
     <Content Include="WaveZ Mission\db\globals.xml" />
     <Content Include="WaveZ Mission\db\types.xml" />
+    <Content Include="WaveZ Mission\WaveZ\WaveZ.c" />
     <Content Include="WaveZ Mission\init.c" />
     <Content Include="WaveZ Mission\MapGroupCluster.xml" />
     <Content Include="WaveZ Mission\mapGroupPos.xml" />
     <Content Include="WaveZ Mission\mapGroupProto.xml" />
+    <Content Include="WaveZ Mission\modules\ObjectEditor.c" />
+    <Content Include="WaveZ Mission\modules\ObjectManager.c" />
+    <Content Include="WaveZ Mission\modules\PositionManager.c" />
+    <Content Include="WaveZ Mission\modules\WeatherManager.c" />
+    <Content Include="WaveZ Mission\modules\WelcomeManager.c" />
+    <Content Include="WaveZ Mission\patches\DebugMonitor.c" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
